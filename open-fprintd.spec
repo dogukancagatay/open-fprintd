@@ -1,12 +1,11 @@
 Name:           open-fprintd
-Version:        0.6
+Version:        0.7
 Release:        1%{?dist}
 Summary:        fprintd replacement for standalone backend services
 
 License:        GPLv2
 URL:            https://github.com/uunicorn/%{name}
-Source0:        %{name}-%{version}.tar.gz
-#Source0:        https://github.com/uunicorn/%{name}/archive/%{version}.tar.gz
+Source0:        https://github.com/dogukancagatay/%{name}/archive/%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-devel
 Requires:       fprintd-clients
@@ -45,6 +44,4 @@ fprintd replacement which allows you to have your own backend as a standalone se
 %{_datadir}/dbus-1/system-services/net.reactivated.Fprint.service
 %{_datadir}/dbus-1/system.d/net.reactivated.Fprint.conf
 
-%changelog
-* Tue Nov 03 2020 Veit Wahlich <cru@zodia.de> - 0.6-1
-- Initial build.
+%autochangelog
